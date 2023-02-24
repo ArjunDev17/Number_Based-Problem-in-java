@@ -1,25 +1,30 @@
 package all.numbers;
 
+import java.util.Scanner;
 
-// i need some more correction don't fallow thi one
-class P1{
-	public static void check(int n) {
-		if(n==2) {
-			System.out.println("Prime number");
-		}else if(n%2!=0) {
-			System.out.println("Prime Number");
-		}
-		else {
-			System.out.println("Not prime number");
-		}
+class P3{
+	static int c=0;
+	public static boolean check(int n) {
+		if(n==1) 
+			return false;
+		
+		for(int i=2;i<n;i++)
+			if(n%i==0) 
+				return false;
+			return true;
 	}
 }
-public class Prime_num {
+
+public class Prime_num1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		P1.check(25);
+		System.out.println("Plzz enter numnber for check ");
+		Scanner so=new Scanner(System.in);
+		int n=so.nextInt();
+		
+		boolean b=P3.check(n);
+		System.out.print("is it Prime "+b);
 	}
 
 }
+
