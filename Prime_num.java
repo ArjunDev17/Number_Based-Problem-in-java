@@ -1,5 +1,7 @@
 package all.numbers;
 
+
+// i need some more correction don't fallow thi one
 class P1{
 	public static void check(int n) {
 		if(n==2) {
