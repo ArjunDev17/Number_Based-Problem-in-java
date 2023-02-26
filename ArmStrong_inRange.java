@@ -1,13 +1,9 @@
 package all.numbers;
-
-
 import java.util.Scanner;
-
 class A2{
 	public static void Arm(int n) {
 		int temp=n;
-		int count=find_dig(n);
-		
+		int count=find_dig(n);//calling find_dig () method by which we find length of number
 		int sum=0;
 		while(n>0) {
 			int fact=1;
@@ -23,6 +19,7 @@ class A2{
 			System.out.println("ArmStrong :"+sum);
 		}
 	}
+	//method which calculate length of number
 		private static int find_dig(int n) {
 		
 			int n1=0;
@@ -32,9 +29,7 @@ class A2{
 				}
 		return n1;
 	}
-		
 }
-
 public class ArmStrong_inRange {
 
 	public static void main(String[] args) {
@@ -46,10 +41,7 @@ public class ArmStrong_inRange {
 		for(int i=start;i<=end;i++) {
 			A2.Arm(i);
 		}
-		
-		
-	}
 	
-
+	}
 }
 
